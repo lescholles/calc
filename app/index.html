@@ -37,14 +37,18 @@
             }
 
             .button {
-                width: 32%;
+                width: 100%;
                 height: 100%;
                 min-width: 45px;
             }
 
             .button-row {
-                height: 20%;
-                margin-bottom: 10px;
+                display: table-row;
+            }
+
+            .button-cell, .op-button-cell {
+                display: table-cell;
+                padding: 5px 3px;
             }
         </style>
     </head>
@@ -59,55 +63,72 @@
             <div class='content'>
                 
                 <div class='container'>
-                    <div class='content'>
 
-                        <div class='primaryContent'>
-                            <div class='button-row'>
-                                <input type="button" class="button" value="7">
-                                <input type="button" class="button" value="8">
-                                <input type="button" class="button" value="9">
-                            </div>
-
-                            <div class="button-row">
-                                <input type="button" class="button" value="4">
-                                <input type="button" class="button" value="5">
-                                <input type="button" class="button" value="6">
-                            </div>
-
-                            <div class="button-row">
-                                <input type="button" class="button" value="1">
-                                <input type="button" class="button" value="2">
-                                <input type="button" class="button" value="3">
-                            </div>
-
-                            <div class="button-row">
-                                <input type="button" class="button" value=",">
-                                <input type="button" class="button" value="0">
-                                <input type="button" class="button" value="=">
-                            </div>
+                    <div class='button-row'>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="7">
+                        </div>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="8">
+                        </div>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="9">
                         </div>
 
-                        <div class='secondaryContent'>
-                            <div class='button-row'>
-                                <input type="button" class="button" value="x">
-                            </div>
-
-                            <div class='button-row'>
-                                <input type="button" class="button" value="/">
-                            </div>
-
-                            <div class='button-row'>
-                                <input type="button" class="button" value="+">
-                            </div>
-
-                            <div class='button-row'>
-                                <input type="button" class="button" value="-">
-                            </div>
+                        <div class='op-button-cell'>
+                            <input type="button" class="button" value="*">
                         </div>
-
                     </div>
-                </div>
 
+                    <div class='button-row'>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="4">
+                        </div>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="5">
+                        </div>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="6">
+                        </div>
+
+                        <div class='op-button-cell'>
+                            <input type="button" class="button" value="/">
+                        </div>
+                    </div>
+
+                    <div class='button-row'>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="1">
+                        </div>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="2">
+                        </div>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="3">
+                        </div>
+
+                        <div class='op-button-cell'>
+                            <input type="button" class="button" value="+">
+                        </div>
+                    </div>
+
+                    <div class='button-row'>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value=",">
+                        </div>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="0">
+                        </div>
+                        <div class='button-cell'>
+                            <input type="button" class="button" value="=">
+                        </div>
+
+                        <div class='op-button-cell'>
+                            <input type="button" class="button" value="-">
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
